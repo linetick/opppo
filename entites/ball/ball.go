@@ -1,3 +1,4 @@
+// Package ball implements a spherical 3D figure.
 package ball
 
 import (

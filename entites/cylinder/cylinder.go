@@ -1,3 +1,4 @@
+// Package cylinder implements a cylindrical 3D figure.
 package cylinder
 
 import (

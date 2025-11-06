@@ -1,3 +1,4 @@
+// Package about threedfigure
 package threedfigure
 
 import (

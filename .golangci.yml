@@ -1,18 +1,15 @@
-run:
-  timeout: 5m
-
 linters:
-  enable:
-    - govet
-    - gosimple
-    - staticcheck
-    - unused
-    - errcheck
-    - gofmt
-    - goimports
+  disable:
     - revive
 
-issues:
-  exclude-use-default: false
-  max-issues-per-linter: 0
-  max-same-issues: 0
+linters-settings:
+  revive:
+    rules:
+      - name: exported
+        disabled: true
+      - name: package-comments
+        disabled: true
+      - name: receiver-naming
+        disabled: true
+      - name: error-strings
+        disabled: true

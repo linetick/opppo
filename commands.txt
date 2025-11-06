@@ -11,4 +11,3 @@ PRINT
 rem owner = John
 
 PRINT
-

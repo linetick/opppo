@@ -1,3 +1,4 @@
+// Package parallelepiped implements a box-shaped 3D figure.
 package parallelepiped
 
 import (

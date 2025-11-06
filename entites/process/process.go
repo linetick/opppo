@@ -1,8 +1,10 @@
+// Package process handles command parsing and file processing.
 package process
 
 import (
 	"bufio"
 	"fmt"
+	"log"
 	"os"
 	"pr1/entites/ball"
 	"pr1/entites/cylinder"
@@ -397,7 +399,11 @@ func ReadAndProcessFile(filename string, container *Container) error {
 	if err != nil {
 		return fmt.Errorf("error opening file: %v", err)
 	}
-	defer file.Close()
+	defer func() {
+    if err := file.Close(); err != nil {
+        log.Printf("Failed to close file: %v", err)
+    }
+	}()
 
 	scanner := bufio.NewScanner(file)
 	lineNumber := 0

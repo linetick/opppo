@@ -1,3 +1,4 @@
+// Package abstrakt defines abstract base types for 3D figures.
 package abstrakt
 
 import "fmt"

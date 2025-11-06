@@ -1,0 +1,14 @@
+ADD BALL 10 2.5 John
+ADD CYLINDER 0 0 3.0 10.0 1.8 Alice
+ADD PARALLELEPIPED 2 3 4 3.0 Bob
+
+PRINT
+
+rem Density = 3     
+  
+PRINT
+
+rem owner = John
+
+PRINT
+

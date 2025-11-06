@@ -24,6 +24,10 @@ func NewContainer() *Container {
 	}
 }
 
+func (c *Container) Count() int {
+	return len(c.figures)
+}
+
 func (c *Container) Add(figure *threedfigure.ThreeDFigure) {
 	c.figures = append(c.figures, figure)
 }

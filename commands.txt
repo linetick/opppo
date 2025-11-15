@@ -4,7 +4,7 @@ ADD PARALLELEPIPED 2 3 4 3.0 Bob
 
 PRINT
 
-rem Density = 3     
+rem Radius > 5
   
 PRINT
 
